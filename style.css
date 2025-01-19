@@ -1,0 +1,63 @@
+body {
+  background-color: #596c5b;
+  color: rgb(252, 251, 251);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 20px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  /* Stín pro nadpis */
+}
+
+#skore {
+  font-size: 1.5em;
+  color: #ffcc00;
+  /* Zlatožlutá barva pro skóre */
+}
+
+#konec-hry {
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+  display: none;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+canvas {
+  border: 1px solid white;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  /* Stín pro plátno */
+}
+
+button {
+  padding: 20px 30px;
+  font-size: 1em;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

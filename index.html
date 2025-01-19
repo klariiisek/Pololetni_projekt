@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Snake</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+  <main>
+    <h1>Snake</h1>
+    <p>Jablíčka: <span id="skore">0</span></p>
+    <p id="konec-hry" style="color: red; display: none;">Konec hry!</p>
+    <button id="start-button" onclick="startGame()">Začít hru</button>
+
+    <div id="game-over" style="display: none;">
+      <h2>Prohráli jste! Konec hry!</h2>
+      <button id="restart-button" onclick="restartGame()">Zkusit znovu</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy;Klára Čechová IT2 2025</p>
+  </footer>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
